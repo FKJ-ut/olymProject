@@ -129,7 +129,7 @@ Route::get('/students/create', [StudentController::class, 'create'])->name('stud
 Route::post('/students', [StudentController::class, 'store'])->name('student.store');
 Route::delete('/students/{student}', [StudentController::class, 'destroy'])->name('students.destroy');
 
-//AI FEATURES
+//Categorize comments
 Route::get('/comments/categorize/{question_id}', [CommentsController::class, 'categorize'])->name('comments.categorize');
 
 //TESTING
